@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Game",
+      "type": "shell",
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "src/main.py"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Install Dependencies",
+      "type": "shell",
+      "command": "uv",
+      "args": [
+        "pip",
+        "install",
+        "-e",
+        ".[dev]"
+      ],
+      "group": "build"
+    }
+  ]
+}

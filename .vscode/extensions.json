@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "charliermarsh.ruff",
+    "editorconfig.editorconfig",
+    "ms-python.debugpy",
+    "ms-vscode.test-adapter-converter",
+    "littlefoxteam.vscode-python-test-adapter",
+    "ms-vscode.vscode-json"
+  ]
+}
