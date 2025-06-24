@@ -1,0 +1,54 @@
+# markdownlint configuration for Python AI Pygame Project
+# Only includes rules that differ from default values
+# Using rule aliases instead of rule IDs for better readability
+# See: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+# Override specific rules that differ from defaults
+
+# Heading rules
+heading-style:  # MD003 - Heading style (default: "consistent")
+  style: "atx"  # Use # style headings consistently
+
+no-duplicate-heading:  # MD024 - Multiple headings with the same content (default: siblings_only: false)
+  siblings_only: true  # Only check sibling headings, allow same content at different levels
+
+# List rules
+ul-style:  # MD004 - Unordered list style (default: "consistent")
+  style: "dash"  # Use - for unordered lists consistently
+
+# Line length (default: 80 characters)
+line-length:  # MD013 - Line length
+  line_length: 100  # Allow longer lines for readability
+  heading_line_length: 100
+  code_block_line_length: 120  # Allow longer code blocks
+
+# Code rules
+code-block-style:  # MD046 - Code block style (default: "consistent")
+  style: "fenced"  # Prefer fenced code blocks over indented
+
+code-fence-style:  # MD048 - Code fence style (default: "consistent")
+  style: "backtick"  # Use ``` instead of ~~~
+
+# Emphasis and formatting rules
+emphasis-style:  # MD049 - Emphasis style (default: "consistent")
+  style: "asterisk"  # Use *emphasis* instead of _emphasis_
+
+strong-style:  # MD050 - Strong style (default: "consistent")
+  style: "asterisk"  # Use **strong** instead of __strong__
+
+# HTML rules
+no-inline-html:  # MD033 - Inline HTML (default: allowed_elements: [])
+  allowed_elements: ["br", "sub", "sup"]  # Allow common HTML elements
+
+# Table rules
+table-pipe-style:  # MD055 - Table pipe style (default: "consistent")
+  style: "leading_and_trailing"  # Require pipes at start and end of rows
+
+# Horizontal rule
+hr-style:  # MD035 - Horizontal rule style (default: "consistent")
+  style: "---"  # Use --- for horizontal rules
+
+# Advanced rules (disable these that are enabled by default)
+required-headings: false  # MD043 - Required heading structure
+proper-names: false  # MD044 - Proper names should have the correct capitalization
+descriptive-link-text: false  # MD059 - Link text should be descriptive
