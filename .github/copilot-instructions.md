@@ -123,6 +123,7 @@ This is a Python game project using pygame-ce with AI components. The project us
 2. Check for linting errors
 3. Test the game manually
 4. Update documentation if needed
+5. Commmit the change
 
 ## Common Patterns to Follow
 
